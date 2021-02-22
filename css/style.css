@@ -12,6 +12,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 6;
 }
 
 header h2{
@@ -30,7 +31,6 @@ header nav a{
     color: #dddddd;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 header nav a:hover{
@@ -47,19 +47,23 @@ footer{
     margin: 2em;
 }
 
+.padding-2{
+    margin: 0.5em;
+}
+
 section{
     padding-top: 4em;
 }
 
 #contenedor-1{
     border: dashed 1px #222831;
-    width: 25%;
+    width: 30%;
     box-sizing: border-box;
 }
 
 #contenedor-2{
     border: dashed 1px #222831;
-    width: 75%;
+    width: 70%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -94,4 +98,28 @@ h3{
     text-align: center;
     background-color: #30475e;
     color: #dddddd;
+}
+
+#contenedor-2 div{
+    position: relative;
+}
+
+#contenedor-2 div img{
+    position: relative;
+}
+
+#contenedor-2 div:nth-child(even) h4{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+#contenedor-2 div:nth-child(odd) h4{
+    position: absolute;
+    top: 54%;
+    width: 100%;
+}
+
+.text-bold{
+    font-weight: bold;
 }
