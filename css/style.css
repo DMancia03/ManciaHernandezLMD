@@ -1,4 +1,97 @@
 *{
     padding: 0%;
     margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #222831;
+    color: #dddddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h2{
+    width: 30%;
+    padding: 0em 1em;
+}
+header nav{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav a{
+    padding: 1.5em;
+    color: #dddddd;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header nav a:hover{
+    background-color: #30475e;
+}
+
+footer{
+    background-color: #222831;
+    color: #dddddd;
+    padding: 1em;
+}
+
+.padding-1{
+    margin: 2em;
+}
+
+section{
+    padding-top: 4em;
+}
+
+#contenedor-1{
+    border: dashed 1px #222831;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+#contenedor-2{
+    border: dashed 1px #222831;
+    width: 75%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+article h2{
+    color: #f05454;
+    text-align: center;
+}
+
+article div p{
+    text-align: justify;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-1{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+h3{
+    text-align: center;
+}
+
+.title-1{
+    text-align: center;
+    background-color: #30475e;
+    color: #dddddd;
 }
