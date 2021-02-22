@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
 *{
     padding: 0%;
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4{
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 header{
@@ -122,4 +128,44 @@ h3{
 
 .text-bold{
     font-weight: bold;
+}
+
+@media(max-width: 1200px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a{
+        width: 100%;
+    }
+
+    section{
+        padding-top: 15em;
+    }
+
+    section article.row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contenedor-1, #contenedor-2{
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+    #contenedor-2{
+        display: flex;
+        flex-direction: column;
+    }
+    #contenedor-2 div:nth-child(odd) h4{
+        position: absolute;
+        top: 90%;
+        width: 100%;
+    }
 }
